@@ -1,0 +1,68 @@
+.tabs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%; }
+  .tabs .label-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    width: 100%; }
+    .tabs .label-list__item {
+      position: relative;
+      font-size: 18px;
+      height: 40px;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background-color: #ececec;
+      cursor: pointer;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      overflow: hidden; }
+    .tabs .label-list__item_active {
+      background-color: #fff;
+      -webkit-box-shadow: inset 0px 3px 6px -3px #8c7f7f;
+              box-shadow: inset 0px 3px 6px -3px #8c7f7f; }
+  .tabs .content-container {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    position: relative; }
+    .tabs .content-container .content {
+      padding: 30px 20px;
+      position: absolute;
+      background-color: white;
+      width: 100%;
+      min-height: 100%; }
+    .tabs .content-container .content_active {
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+      -webkit-transform: translate(0, 0);
+          -ms-transform: translate(0, 0);
+              transform: translate(0, 0);
+      z-index: 100 !important; }
